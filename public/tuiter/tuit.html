@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuit - Tuiter</title>
+    <style>
+        .file-upload-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .file-upload-container input[type="file"] {
+            margin-right: 10px;
+        }
+        .tuit-button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="navigation.html">Back</a>
+    <h1>Tuiter</h1>
+    <h2>Tuit</h2>
+    <p>
+        <img src="dog.jpg" width="48" height="48" alt="Profile Picture">
+    </p>
+    <p>
+        <textarea placeholder="What's happening?"></textarea>
+    </p>
+    <p>
+        <select>
+            <option value="EVERYONE" selected>Everyone can reply</option>
+            <option value="FOLLOWING">People you follow</option>
+            <option value="MENTIONED">Only people you mention</option>
+        </select>
+    </p>
+    <p>
+        <div class="file-upload-container">
+            <input type="file">
+            <button>Tuit</button>
+        </div>
+    </p>
+</body>
+</html>

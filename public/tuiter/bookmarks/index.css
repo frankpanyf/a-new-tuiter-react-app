@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.box .part1 {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box .card {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.box .card .card-left {
+    width: 10%;
+    margin-left: 15px;
+}
+
+.box .card .card-left img {
+    width: 35px;
+    height: auto;
+}
+
+.box .card .card-right {
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box .card .card-right .top {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box .card .card-right .content {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.box .card .card-right .content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.box .card .card-right .remark {
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}

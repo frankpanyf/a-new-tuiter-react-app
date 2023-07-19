@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+    <style>
+        .sidebar {
+            float: left;
+            width: 20%;
+        }
+        .main-content {
+            float: left;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="home.html">Home</a><br>
+        <a href="profile.html">Profile</a><br>
+        <a href="edit-profile.html">Edit Profile</a><br>
+    </div>
+    <div class="main-content">
+        <a href="profile.html">Back</a>
+        <h1>Tuiter</h1>
+        <h2>Edit Profile</h2>
+        <a href="profile.html">Save</a>
+        <img src="background2.jpg" alt="Banner" style="height:200px;width:100%;">
+        <p><input type="file" id="banner-upload"></p>
+        <img src="dog.jpg" alt="Avatar" style="height:48px;width:48px;">
+        <p><input type="file" id="avatar-upload"></p>
+        <hr>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="WebDev" placeholder="Name">
+        <hr>
+        <label for="bio">Bio</label>
+        <br>
+        <textarea id="bio" name="bio" rows="10" cols="50">Maecenas vel lobortis tellus. Quisque varius mattis sem. Praesent sollicitudin diam condimentum volutpat efficitur. Praesent elementum in nulla in placerat. Nam feugiat, turpis in pulvinar laoreet, ligula dolor sollicitudin nisi, non elementum elit neque vel tortor. Fusce semper cursus luctus. Phasellus vulputate nunc vitae lacus cursus placerat.</textarea>
+    </div>
+</body>
+</html>
