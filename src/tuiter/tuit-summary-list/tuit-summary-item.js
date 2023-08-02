@@ -1,4 +1,7 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import { deleteTuit } from "../reducers/tuits-reducer";
+
 
 const TuitSummaryItem = ({
   tuit = {
@@ -9,6 +12,11 @@ const TuitSummaryItem = ({
     "image": "tesla.png"
   }
 }) => {
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuit(id));
+  }
+
   return (
       <li className="list-group-item">
         <div className="row">
@@ -20,6 +28,9 @@ const TuitSummaryItem = ({
           <div className="col-2">
             <img width={70} className="float-end rounded-3" src={`/images/${tuit.image}`} alt={tuit.userName} />
           </div>
+          <i className="bi bi-x-lg float-end"
+             onClick={() => deleteTuitHandler(tuit._id)}></i>
+
         </div>
       </li>
   );
