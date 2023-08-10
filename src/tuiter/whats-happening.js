@@ -1,32 +1,29 @@
 import React, {useState} from "react";
-import {AiOutlinePicture} from "react-icons/ai";
-import {HiOutlineGif} from "react-icons/hi2";
-import {MdFormatListBulleted} from "react-icons/md";
-import {BsEmojiSmile} from "react-icons/bs";
-import {TbCalendarStats} from "react-icons/tb";
-import {HiOutlineLocationMarker} from "react-icons/hi";
-import {BiBold, BiItalic} from "react-icons/bi";
-import {createTuit} from "./reducers/tuits-reducer";
+import { AiOutlinePicture } from 'react-icons/ai';
+import { HiOutlineGif } from 'react-icons/hi2';
+import { HiOutlineLocationMarker } from 'react-icons/hi'
+import { MdFormatListBulleted } from 'react-icons/md';
+import { BsEmojiSmile } from 'react-icons/bs';
+import { TbCalendarStats } from 'react-icons/tb';
+import { BiBold, BiItalic } from 'react-icons/bi';
 import {useDispatch} from "react-redux";
-
+import {createTuitThunk} from "./services/tuits-thunks";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
-
   const tuitClickHandler = () => {
     const newTuit = {
       tuit: whatsHappening
     }
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
-
-    console.log(whatsHappening);
   }
+
   return (
       <div className="row">
         <div className="col-auto">
-          <img src="/images/nasa.png" width={60}/>
+          <img src="https://images.seattletimes.com/wp-content/uploads/2019/07/nasameatball.jpg" width={60}/>
         </div>
         <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"

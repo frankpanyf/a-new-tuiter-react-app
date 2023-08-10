@@ -1,26 +1,13 @@
-import React from 'react';
+import React from "react";
 import TuitSummaryList from "../tuit-summary-list";
 
-
-const ExploreScreen = () => {
-  const sampleTuit = {
-    "topic": "Science",
-    "userName": "NASA",
-    "time": "1h",
-    "title": "The James Webb Telescope successfully launched and reached L2 point",
-    "image": "./././images/nasa.png"
-  };
-
-
+function ExploreScreen() {
   return (
       <div>
-        <h1>Explore Screen</h1>
-        <ul>
-          <TuitSummaryList/>
-          {/*<TuitSummaryItem/>*/}
-        </ul>
+        <h1>Explore</h1>
+        <TuitSummaryList/>
       </div>
   );
-};
+}
 
 export default ExploreScreen;

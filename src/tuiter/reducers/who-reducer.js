@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import whoArray from "./who.json";
+import whoArray from "../who-to-follow-list/who.json";
 
 const whoSlice = createSlice({
   name: "who",
@@ -7,4 +7,3 @@ const whoSlice = createSlice({
 });
 
 export default whoSlice.reducer;
-
